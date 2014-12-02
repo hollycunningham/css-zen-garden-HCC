@@ -1,0 +1,777 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+
+@font-face {
+  font-family: "GoodDog"; src: url(images/GoodDog.otf) format("truetype");
+}
+
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: .75rem "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height: 1.4rem;
+	color: #555753; 
+	background: #edf1d8 url(images/gplaypattern.png) repeat;
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h3 { 
+	font: normal 1.5rem "GoodDog";
+	letter-spacing: .0625rem; 
+	margin: 10px 0 10px 0; 
+	text-align:center;
+	color: #000;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #555;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #555;
+	}
+a:hover, a:active { 
+	text-decoration: underline; 
+	color: #fff;
+	}
+acronym {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+#container { 
+	max-width: 960px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 20px;
+	}
+
+#intro { 
+	width: 67.7%; /* 650px / 960px */
+	float: left;
+	margin-top: 10px; 
+	background: #fa6900 url(images/Camel.png) no-repeat 47% 50%;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	height: 450px;
+	position:relative;
+	border: 1px solid #666;
+	}
+
+/* using an image to replace text in an h1. This trick courtesy Douglas Bowman, http://www.stopdesign.com/articles/css/replace-text/ */
+#pageHeader h1 { 
+	margin: 0% 0% 0% 3%;  
+	float: left;
+	}
+#pageHeader h1 span {
+	font:4.5rem "GoodDog";
+	color:#111;
+	}
+#pageHeader h2 {  
+	float: right;
+	margin: 13% 3% 1% 0%;
+	}
+#pageHeader h2 span {
+	font:1.8rem "GoodDog";
+	color:#fff;
+	}
+#pageHeader {
+	padding-top: 20px;
+}
+
+#quickSummary {
+	background: #f38630;
+	padding:1%;
+	margin: 28% 1%;
+	width:54%;
+	height:auto; 
+	float: left;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 3px solid #666;
+	color:#fff;
+	}
+#quickSummary p {
+	font: italic .833rem/1.833rem "Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	text-align:center;
+	}
+
+#preamble {
+	background: #f38630;
+	padding:12% 2%;
+	width:33%;
+	margin-right:2%;
+	height:470px; 
+	float: right;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px dashed #666;
+	color:#fff;
+	}
+	
+#supportingText {	
+	width: 67.7%;
+	float:left;
+	background: #69D2E7 url(images/Cat.png) no-repeat 64% 14%;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #666;
+	margin-top:5%;
+	margin-bottom:55px;
+	height:1463px;
+	}
+	
+#explanation {
+	width: 39%;
+	float: left;
+	background: #E0E4CC;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px dashed #666;
+	margin: 2%;
+	margin-bottom:8%;
+	padding: 1%;
+}
+
+#participation {
+	margin: 54% 2% 0% 0%;
+	width: 50%;
+	float: right;
+	background: #E0E4CC;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px solid #666;
+	padding:1%;
+}
+
+#participation a {
+	color: #999;
+}
+
+#benefits {
+	width:29%;
+	float:left;
+	background: #A7DBD8;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 3px solid #666;
+	margin: 0% 7% 8% 6%;
+	padding: 1%;
+}
+
+#requirements {
+	width:94%;
+	margin:2%;
+	clear:both;
+	background: #f38630;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1px dashed #666;
+	padding:1%;
+}
+
+#requirements a {
+	color: #fff;
+}
+
+#footer { 
+	text-align: center; 
+	min-width:960px;
+	background: #A7DBD8 ;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	margin: 35px 0 10px 0;
+	padding:1%;
+	}
+	
+	
+#footer a:link, #footer a:visited { 
+	margin-right: 20px;
+	color: #333333; 
+	}
+
+#linkList {
+	width:30%;
+	float:right;
+	position: absolute;
+	right: 0px;
+	top: 80px;
+	}
+#linkList2 { 
+	}
+#linkList h3.select { 
+	}
+#linkList h3.select span {
+	
+	}
+#linkList h3.favorites { 
+	margin: 25px 0 5px 0; 
+	width: 60px; 
+	height: 18px; 
+	}
+#linkList h3.favorites span {
+	}
+#linkList h3.archives { 
+	}
+#linkList h3.archives span {
+	}
+#linkList h3.resources { 
+	}
+#linkList h3.resources span {
+	}
+
+
+#linkList ul {
+	margin: 0;
+	padding: 0;
+	}
+#linkList li {
+	background: transparent url(cr1.gif) no-repeat top center; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+#linkList li a:link {
+	color: #fff;
+	}
+#linkList li a:visited {
+	color: #fff;
+	}
+	
+#lselect {
+	background: #f38630;
+	-moz-border-radius: 15px;
+	border-radius: 15px; 
+	padding: 1%;
+	margin:0 0 5% 0;
+	width:100%;
+	text-align:center;
+	border: 3px solid transparent;
+}
+
+#larchives {
+	background: #69D2E7;
+	-moz-border-radius: 15px;
+	border-radius: 15px; 
+	padding: 1%;
+	margin:0 0 5% 0;
+	width:100%;
+	text-align:center;
+	border: 3px solid #666;
+}
+
+#lresources {
+	background: #f38630;
+	-moz-border-radius: 15px;
+	border-radius: 15px; 
+	padding: 1%;
+	margin:0 0 5% 0;
+	width:100%;
+	text-align:center;
+	border: 3px solid transparent;
+}
+
+
+#extraDiv1 {
+	background: url(images/Crow.png) no-repeat; 
+	position: absolute; 
+	top: 1820px; 
+	right: 100px; 
+	width: 275px; 
+	height: 200px;
+	}
+	
+#extraDiv2 {
+	background: url(images/Rabbit.png) no-repeat; 
+	position: absolute; 
+	top: 1373px; 
+	left: 33.5%; 
+	width: 275px; 
+	height: 200px;
+	}
+
+	.accesskey {
+	text-decoration: underline;
+	}
+	
+	
+@media screen and (max-width:420px) {
+	
+#body {
+	width:100%;
+	clear:both;
+	float:none;
+}
+
+#container {
+	width:96%;
+	height:auto;
+	clear:both;
+	float:none;
+	padding: 2%;
+}
+
+#intro {
+	width:100%;
+	height:auto;
+	clear:both;
+	float:none;
+	background: #fa6900 url(images/Camel.png) no-repeat 10% 9%;
+	background-size: 25%;
+}
+
+#pageHeader {
+	padding-top:0px;
+	float:none;	
+}
+
+#pageHeader h1 {
+	width:100%;
+	clear:both;
+	margin: 0 auto;
+	float:right;
+}
+
+#pageHeader h1 span {
+	font:2.9rem "GoodDog";
+	padding-left: 5%;
+}
+
+#pageHeader h2 {
+	clear:both;
+	padding:0px;
+	margin-top: 19%;
+}
+
+#pageHeader h2 span {
+		font:1.4rem "GoodDog";
+}
+
+#quickSummary {
+	width:95%;
+	clear:both;
+	float:none;	
+	margin:0% 1%;
+}
+
+#preamble {
+	width:90%;
+	height:auto;
+	clear:both;
+	margin:2% 1%;
+	padding: 12% 4%;
+	float:none;
+}
+
+#supportingText {
+	width:99%;
+	height: auto;
+	clear:both;
+	float:none;	
+	background: #69D2E7 url(images/Cat.png) no-repeat 3% 57.5%;
+	background-size:20%;
+	margin-bottom:0rem;
+}
+
+#explanation {
+	width:93%;
+	clear:both;
+	float:none;	
+	margin-bottom:2%;
+}
+
+#participation {
+	width:93%;
+	clear:both;
+	float:none;
+	margin: 0% 2%;
+}
+
+#benefits {
+	width:62%;
+	clear:both;
+	float:none;
+	margin: 5% 15%;
+}
+
+#requirements {
+	width:93%;
+	clear:both;
+	float:none;
+}
+
+#footer{
+	min-width:92%;
+	margin: 4% 3%;
+}
+
+#linkList {
+	width:97%;
+	clear:both;
+	float:none;
+	position:relative;
+	margin: 1%;
+	margin-top:4%;
+	top:0%;
+}
+	
+#linkList2 {
+	width:100%;
+	clear:both;
+}
+
+#lselect{
+	width:98%;
+	clear:both;
+}
+
+#larchives{
+	width:96%;
+	clear:both;
+}
+
+#lresources{
+	width:98%;
+	clear:both;
+}	
+
+#extraDiv1 {
+	display:none;
+}
+	
+#extraDiv2 {
+	display:none;
+}
+	
+}
+
+@media screen and (-webkit-min-device-pixel-ratio : 2) and (orientation:landscape), screen and (min-device-pixel-ratio : 2) and (orientation:landscape){
+
+#body {
+	width:100%;
+	clear:both;
+	float:none;
+}
+
+#container {
+	width:96%;
+	height:auto;
+	clear:both;
+	float:none;
+	padding: 2%;
+		font-size: .5rem;
+	line-height: 1rem;
+}
+
+#intro {
+	width:100%;
+	height:auto;
+	clear:both;
+	float:none;
+	background: #fa6900 url(images/Camel.png) no-repeat 10% 7%;
+	background-size: 15%;
+}
+
+#pageHeader {
+	padding-top:0px;
+	float:none;	
+}
+
+#pageHeader h1 {
+	width:100%;
+	clear:both;
+	margin: 0 auto;
+	float:right;
+}
+
+#pageHeader h1 span {
+	font:3rem "GoodDog";
+	padding-left: 1%;
+}
+
+#pageHeader h2 {
+	clear:both;
+	padding:0px;
+	margin-top: 5%;
+}
+
+#pageHeader h2 span {
+		font:1.8rem "GoodDog";
+}
+
+#quickSummary {
+	width:95%;
+	clear:both;
+	float:none;	
+	margin:0% 1%;
+	float: none;
+}
+
+#quickSummary p {
+	font-size: .5rem;
+	line-height: 1.2rem;
+	}
+
+#preamble {
+	width:90%;
+	height:auto;
+	clear:both;
+	margin:2% 1%;
+	padding: 12% 4%;
+	float:none;
+}
+
+#supportingText {
+	width:99%;
+	height: auto;
+	clear:both;
+	float:none;	
+	background: #69D2E7 url(images/Cat.png) no-repeat 3% 58.5%;
+	background-size:20%;
+	margin-bottom:0rem;
+}
+
+#explanation {
+	width:93%;
+	clear:both;
+	float:none;	
+	margin-bottom:2%;
+}
+
+#participation {
+	width:93%;
+	clear:both;
+	float:none;
+	margin: 0% 2%;
+}
+
+#benefits {
+	width:62%;
+	clear:both;
+	float:none;
+	margin: 5% 15%;
+	font-size:.8rem;
+	line-height:1.8rem;
+}
+
+#requirements {
+	width:93%;
+	clear:both;
+	float:none;
+}
+
+#footer{
+	min-width:92%;
+	margin: 4% 3%;
+}
+
+#linkList {
+	width:97%;
+	clear:both;
+	float:none;
+	position:relative;
+	margin: 1%;
+	margin-top:4%;
+	top:0%;
+}
+	
+#linkList2 {
+	width:100%;
+	clear:both;
+}
+
+#lselect{
+	width:98%;
+	clear:both;
+}
+
+#larchives{
+	width:96%;
+	clear:both;
+}
+
+#lresources{
+	width:98%;
+	clear:both;
+}	
+
+#extraDiv1 {
+	display:none;
+}
+	
+#extraDiv2 {
+	display:none;
+}                     
+
+}
+
+@media screen and (min-width:421px) and (max-width:630px) {
+
+#body {
+	width:100%;
+	clear:both;
+	float:none;
+}
+
+#container {
+	width:96%;
+	height:auto;
+	clear:both;
+	float:none;
+	padding: 2%;
+}
+
+#intro {
+	width:100%;
+	height:auto;
+	clear:both;
+	float:none;
+	background: #fa6900 url(images/Camel.png) no-repeat 10% 9%;
+	background-size: 25%;
+}
+
+#pageHeader {
+	padding-top:0px;
+	float:none;	
+}
+
+#pageHeader h1 {
+	width:100%;
+	clear:both;
+	margin: 0 auto;
+	float:right;
+}
+
+#pageHeader h1 span {
+	font:2.9rem "GoodDog";
+	padding-left: 5%;
+}
+
+#pageHeader h2 {
+	clear:both;
+	padding:0px;
+	margin-top: 17%;
+}
+
+#pageHeader h2 span {
+		font:2.0rem "GoodDog";
+}
+
+#quickSummary {
+	width:95%;
+	clear:both;
+	float:none;	
+	margin:0% 1%;
+}
+
+#preamble {
+	width:90%;
+	height:auto;
+	clear:both;
+	margin:2% 1%;
+	padding: 12% 4%;
+	float:none;
+}
+
+#supportingText {
+	width:99%;
+	height: auto;
+	clear:both;
+	float:none;	
+	background: #69D2E7 url(images/Cat.png) no-repeat 3% 55.5%;
+	background-size:20%;
+	margin-bottom:0rem;
+}
+
+#explanation {
+	width:93%;
+	clear:both;
+	float:none;	
+	margin-bottom:2%;
+}
+
+#participation {
+	width:93%;
+	clear:both;
+	float:none;
+	margin: 0% 2%;
+}
+
+#benefits {
+	width:62%;
+	clear:both;
+	float:none;
+	margin: 5% 15%;
+}
+
+#requirements {
+	width:93%;
+	clear:both;
+	float:none;
+}
+
+#footer{
+	min-width:92%;
+	margin: 4% 3%;
+}
+
+#linkList {
+	width:97%;
+	clear:both;
+	float:none;
+	position:relative;
+	margin: 1%;
+	margin-top:4%;
+	top:0%;
+}
+	
+#linkList2 {
+	width:100%;
+	clear:both;
+}
+
+#lselect{
+	width:98%;
+	clear:both;
+}
+
+#larchives{
+	width:96%;
+	clear:both;
+}
+
+#lresources{
+	width:98%;
+	clear:both;
+}	
+
+#extraDiv1 {
+	display:none;
+}
+	
+#extraDiv2 {
+	display:none;
+}
+
+}
+	
+	
